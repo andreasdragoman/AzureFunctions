@@ -1,0 +1,8 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "SBConnection": "Endpoint=sb://andreas-service-bus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=tdOlUCsSgMXwKLT5Oifxh8eKlSl/7qqvF+ASbBoHQgc="
+  }
+}
