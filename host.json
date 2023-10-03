@@ -11,7 +11,7 @@
   },
   "extensions": {
     "serviceBus": {
-        "transportType": "amqpWebSockets"
+      "transportType": "amqpWebSockets"
     }
   },
   "concurrency": {

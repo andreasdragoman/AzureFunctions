@@ -1,20 +1,18 @@
 using System;
 using System.Text;
-using Azure.Messaging.ServiceBus;
-using Microsoft.Azure.Documents.SystemFunctions;
+using Microsoft.Azure.ServiceBus;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace Person.Function
+namespace PersonAdd.Function
 {
     public class AddPersonSBTrigger
     {
         [FunctionName("AddPersonSBTrigger")]
         public void Run(
             [ServiceBusTrigger("add-person-queue", Connection = "SBConnection")]
-            ServiceBusReceivedMessage myQueueItem,
+            Message myQueueItem,
             [CosmosDB(
                 databaseName: "MainDatabase",
                 collectionName: "Persons",
@@ -31,7 +29,7 @@ namespace Person.Function
 
     public class Person 
     {
-        //public Guid Id { get; set; }
+        public Guid? Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
     }
