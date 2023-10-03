@@ -3,6 +3,7 @@
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-    "SBConnection": "Endpoint=sb://andreas-service-bus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=tdOlUCsSgMXwKLT5Oifxh8eKlSl/7qqvF+ASbBoHQgc="
+    "SBConnection": "Endpoint=sb://andreas-service-bus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=tdOlUCsSgMXwKLT5Oifxh8eKlSl/7qqvF+ASbBoHQgc=",
+    "CosmosDbConnectionString": "AccountEndpoint=https://andreas-certificate-cosmos-db.documents.azure.com:443/;AccountKey=NGeAEgKXP6Jguta2LoVZQhEEpO978vaHqjYrmdhqcfsbo94AXIo9MD06rVn2IQm69ugBtxcHEh9UACDb4ViGPQ==;"
   }
 }
